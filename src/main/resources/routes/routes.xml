@@ -1,0 +1,10 @@
+<routes xmlns="http://camel.apache.org/schema/spring">
+    <route id="test" autoStartup="true">
+        <from uri="file://tmp/document-archiver"/>
+        <bean method="selectDirectory" beanType="be.deltis.documentarchiver11.gui.FileChooser"/>
+        <transform>
+            <simple>ref:file</simple>
+        </transform>
+        <to uri="log:out"/>
+    </route>
+</routes>
