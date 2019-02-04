@@ -6,5 +6,7 @@ To build: `./gradlew build`
 
 To clean: `./gradlew clean`
 
+To run:   `./gradlew bootRun`
+
 Java 10
 
