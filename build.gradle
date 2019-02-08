@@ -28,3 +28,7 @@ dependencies {
 	implementation 'org.apache.camel:camel-spring-boot-starter:2.23.1'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
+bootRun {
+	systemProperties = System.properties
+}

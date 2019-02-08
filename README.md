@@ -8,5 +8,7 @@ To clean: `./gradlew clean`
 
 To run:   `./gradlew bootRun`
 
+To run with specific params:   `./gradlew bootRun -DinputDir=/tmp/document-archiver/in`
+
 Java 10
 
