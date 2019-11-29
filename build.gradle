@@ -17,7 +17,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'be.deltis'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenLocal()
@@ -27,6 +27,7 @@ repositories {
 dependencies {
 	implementation 'org.apache.camel:camel-spring-boot-starter:2.23.1'
 	implementation 'javax.xml.bind:jaxb-api:2.3.0'
+	runtime 'javax.activation:javax.activation-api:1.2.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
