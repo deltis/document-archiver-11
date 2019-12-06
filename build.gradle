@@ -26,9 +26,13 @@ repositories {
 
 dependencies {
 	implementation 'org.apache.camel:camel-spring-boot-starter:2.23.1'
+	implementation 'org.apache.camel:camel-test-spring:2.23.1'
 	implementation 'javax.xml.bind:jaxb-api:2.3.0'
 	runtime 'javax.activation:javax.activation-api:1.2.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+	compileOnly 'org.projectlombok:lombok:1.18.10'
+	annotationProcessor 'org.projectlombok:lombok:1.18.10'
 }
 
 bootRun {
